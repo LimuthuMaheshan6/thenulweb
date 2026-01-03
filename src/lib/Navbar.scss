@@ -64,15 +64,25 @@ $width_screen:800px;
 .logo {
    
   
-    width: 300px;
-    margin-top: -5px;
+    width: 241px;
+    margin-top: -2px;
+
+    @media screen and (min-width:1024px) {
+        width: 270px;
+    }
     a{
        
+
         text-decoration: none;
-        color: white;
-        font-size: 21px;
-        margin: 0 20px;
+            margin: 0 15px;
+        color: white; 
+        font-size: 18px;
+        font-weight: bold;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        @media screen and (min-width: 1024px) {
+            margin: 0 20px;
+            
+        }
 
         &:hover {
             color: rgb(207, 205, 205);
@@ -117,8 +127,8 @@ $width_screen:800px;
 }
 .inactive1.active {
     animation: 0.1s open-links linear ease-out;
-    color: black;
-    background: white;
+    color: white;
+    background: rgb(44, 30, 30);
     padding: 3px;
     border-radius: 20px;
     height: 30px;
