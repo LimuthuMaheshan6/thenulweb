@@ -90,7 +90,7 @@
     
      <div class="display-none" id="pad">
     
-        <div style="height: 70px; width:100%; background:black;"></div>
+        <div class="stable-navpad" style="height: 70px; width:100%;"></div>
     
     
          <div class="flex-center">
