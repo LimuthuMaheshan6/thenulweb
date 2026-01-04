@@ -7,8 +7,8 @@
   
 
     let links = [
-        {path: "/services", name: "Services"},
-        {path: "/pricing", name: "Pricing"},
+        {path: "/products", name: "Products"},
+        {path: "/location", name: "Location"},
         {path: "/portfolio", name: "Portfolio"},
         {path: "/about", name: "About"},
         
