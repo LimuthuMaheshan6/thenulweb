@@ -17,6 +17,15 @@
 
     ]
 
+    let plan = [
+        {action: "1. Go to Product page", img:"icons/new-product.webp", btn: "Product", btnStyle: "mt-3 p-2 bg-amber-800 hover:bg-amber-900 text-[#dce4c9] rounded-4xl", btnPath:"/products"},
+        {action: "2. Call Us", img:"icons/telephone.webp", btn: "Contact", btnStyle: "mt-3 p-2 bg-amber-800 hover:bg-amber-900 text-[#dce4c9] rounded-4xl", btnPath:"/contact"},
+        {action: "3. Purchase Ceylon Cinnamon", img:"icons/cinnamoni.webp",btn: "|", btnStyle: "mt-3 p-2 opacity-0 cursor-none hover:bg-amber-900 text-[#dce4c9] rounded-4xl", imgStyle: " translate-y-5 "},
+
+
+        
+    ]
+
 </script>
 
 <header class="min-md:pb-[20px]" style="background: rgb(228, 220, 201);">
@@ -140,10 +149,24 @@
 
 </section>
 
-<section class="bg-[#dce4c9] pt-3 pb-2 plan">
+<section class="bg-[#dce4c9] pt-3 pb-10 plan">
     <p class="text-center text-[47px] text-[#441f1f] font-extrabold">Take the next step</p>
 
-    <div class="w-[300px] h-[300px]  rounded-4xl border-2 border-[#441f1f]">
-        <img class="w-[100px]" src="icons/new-product.webp" alt="icon-products">
+    <div class="flex flex-row justify-center gap-[10px] flex-wrap">
+        {#each plan as item}
+        <div class="w-[250px] h-[250px]  rounded-4xl border-2 border-[#441f1f]">
+        
+                    <div class="w-full h-full flex flex-col items-center justify-center">
+        
+                        <p class="font-extralight">{item.action}</p>
+        
+                        <img class={"w-[100px] " + item.imgStyle} src={item.img} alt="icon-plans">
+        
+                        <a class={item.btnStyle} href={item.btnPath}>{item.btn}</a>
+                    </div>
+        
+        
+                </div>
+        {/each}
     </div>
 </section>
