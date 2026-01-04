@@ -1,10 +1,19 @@
 <script lang="ts">
+    
 
     let cardCosts = [
        
         {name: "Heavy fertilizer usage", img: "icons/heavy.webp", width: "250px", style: "rounded-[18px]",  card: "background: url('icons/heavy.webp') no-repeat;background-size: cover;"},
         {name: "Loss of flavour & smell", img: "icons/old.webp", width: "275px", style: "rounded-[18px]", card: "background: url('icons/old.webp') no-repeat;background-size: cover;"},
         {name: "More moisture, less oil ", img: "icons/water.webp", width: "250px", style: "rounded-[18px]", card: "background: url('icons/water.webp') no-repeat;background-size: cover;"},
+
+    ]
+
+    let cardBenefit =  [
+       
+        {name: "0 Fertilizers", img: "", width: "250px", style: "rounded-[18px]",  card: "background: url('images/natural.webp') no-repeat;background-size: cover;"},
+        {name: "Rich Nutrients", img: "", width: "275px", style: "rounded-[18px]", card: "background: url('images/original.webp') no-repeat;background-size: cover;"},
+        {name: "Original Cinnamon", img: "icons/water.webp", width: "250px", style: "rounded-[18px]", card: "background: url('images/zerofertilizers.webp') no-repeat;background-size: cover;"},
 
     ]
 
@@ -27,7 +36,7 @@
 
 <section class="bg-[#441f1f] pt-[20px] pb-7">
     <div class="h-[20px] w-full"></div>
-    <h2 class="text-center text-white" style="text-transform: capitalize;">Drawback of purchasing cinnamon in markets</h2>
+    <h2 class="text-center text-white" style="text-transform: capitalize;">Drawbacks of purchasing cinnamon in markets</h2>
     <br>
 
     <div class="flex flex-row flex-wrap justify-center gap-5">
@@ -36,6 +45,62 @@
             <div class="w-80 h-80 rounded-2xl bg-amber-50 min-[500px]:hover:scale-110 duration-300 ease-out" style={item.card}>
                 <div class="w-full h-full flex flex-col items-center justify-between">
                     <p  style="color: rgb(228, 220, 201);" class="bg-[#5c131ac2] p-1 text-center text-[18px]  transform translate-y-[20px] rounded-3xl">{item.name}</p>
+                    <div class=""></div> <div class=""></div>
+                  
+
+                </div>
+            </div>
+            
+        {/each}
+
+    </div>
+    <div class="h-[100px]"></div>
+
+ 
+    <p class="text-center  mb-[6px] text-[29px] text-[#dce4c9] font-semibold">What some other vendors sell as Ceylon Cinnamon ?</p>
+
+    <div class="overflow-hidden min-[618px]:rounded-2xl max-w-[600px] mx-auto">
+        <img class="mx-auto  min-[618px]:rounded-2xl max-[622px]:w-[100%] w-[600px] transform hover:scale-102 duration-300" src="images/war.webp" alt="cassia">
+    </div>
+    <p class="text-center  mb-[3px]  text-[#dce4c9]  m-3 translate-y-[-12px]">"Cassia Cinnamon" is Chinese cinnamon. <br class="min-[500px]:hidden"> Fake cinnamon.</p>
+
+
+
+
+
+
+</section>
+
+<section class="pb-3 min-lg:p-[20px]" style="background: rgb(228, 220, 201);">
+    <br>
+    <div class="flex flex-row flex-wrap justify-around gap-0">
+        <div class="flex flex-col items-center justify-center">
+            <h2 class="text-center">Hello, I am Thenul Ranasinghe</h2>
+            <p class="text-center text-[#441f1f]">Owner of D&D Ceylon Cinnamon</p>
+           
+
+                <a href="/contact" class="mx-auto bg-green-400 p-1 text-white rounded-2xl hover:bg-amber-900 hover:text-white" >Contact Me</a>
+           <div class="h-3"></div>
+        </div>
+        <div>
+            <img class="w-[400px] rounded-2xl" src="images/thenul.webp" alt="thenul">
+
+        </div>
+    </div>
+    
+</section>
+
+<section class="bg-[#441f1f] pt-[20px] pb-7 benefits">
+    <div class="h-[20px] w-full"></div>
+    <h2 class="text-center text-white" style="text-transform: capitalize;">Explore  benefits buying D&D ceylon cinnamon</h2>
+    <br>
+
+    <div class="flex flex-row flex-wrap justify-center gap-5">
+
+        {#each cardBenefit as item}
+            <div class="w-80 h-80 rounded-2xl bg-amber-50 min-[500px]:hover:scale-110 duration-300 ease-out" style={item.card}>
+                <div class="w-full h-full flex flex-col items-center justify-between">
+                    <p   class="bg-green-400 text-amber-950 p-1 text-center text-[18px]  transform translate-y-[20px] rounded-3xl">{item.name}</p>
                     <div class=""></div> <div class=""></div>
                   
 
@@ -69,22 +134,16 @@
         <p class="text-white transform translate-y-[-2px]">97%</p>
     </div>
 
-    <br><br>
-
-    <p class="text-center  mb-[6px] text-[29px] text-[#dce4c9] font-semibold">What some other vendors sell as Ceylon Cinnamon ?</p>
-
-    <div class="overflow-hidden min-[618px]:rounded-2xl max-w-[600px] mx-auto">
-        <img class="mx-auto  min-[618px]:rounded-2xl max-[622px]:w-[100%] w-[600px] transform hover:scale-102 duration-300" src="images/war.webp" alt="cassia">
-    </div>
-    <p class="text-center  mb-[3px]  text-[#dce4c9]  m-3 translate-y-[-12px]">"Cassia Cinnamon" is Chinese cinnamon. <br class="min-[500px]:hidden"> Fake cinnamon.</p>
-
-
-
+    
 
 
 
 </section>
 
-<section style="background: rgb(228, 220, 201);">
-    <h1>Hello</h1>
+<section class="bg-[#dce4c9] pt-3 pb-2 plan">
+    <p class="text-center text-[47px] text-[#441f1f] font-extrabold">Take the next step</p>
+
+    <div class="w-[300px] h-[300px]  rounded-4xl border-2 border-[#441f1f]">
+        <img class="w-[100px]" src="icons/new-product.webp" alt="icon-products">
+    </div>
 </section>
