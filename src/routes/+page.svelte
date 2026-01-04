@@ -2,9 +2,9 @@
 
     let cardCosts = [
        
-        {name: "Heavy fertilizer usage", img: "icons/heavy.webp", width: "250px", style: "rounded-[18px]"},
-        {name: "Loss of flavour & smell", img: ""},
-        {name: "Less oil, more moisture", img: ""},
+        {name: "Heavy fertilizer usage", img: "icons/heavy.webp", width: "250px", style: "rounded-[18px]",  card: "background: url('icons/heavy.webp') no-repeat;background-size: cover;"},
+        {name: "Loss of flavour & smell", img: "icons/old.webp", width: "275px", style: "rounded-[18px]", card: "background: url('icons/old.webp') no-repeat;background-size: cover;"},
+        {name: "Less oil, more moisture", img: "icons/water.webp", width: "250px", style: "rounded-[18px]", card: "background: url('icons/water.webp') no-repeat;background-size: cover;"},
 
     ]
 
@@ -33,10 +33,11 @@
     <div class="flex flex-row flex-wrap justify-center gap-5">
 
         {#each cardCosts as item}
-            <div class="w-80 h-80 rounded-2xl bg-amber-50" style="background: rgb(228, 220, 201);">
-                <p class="text-center text-[24px] font-bold text-[#441f1f] transform translate-y-[20px]">{item.name}</p>
-                <div class="w-full h-full flex flex-col items-center justify-center">
-                    <img class={item.style} src={item.img} width={item.width} alt="hello">
+            <div class="w-80 h-80 rounded-2xl bg-amber-50" style={item.card}>
+                <div class="w-full h-full flex flex-col items-center justify-between">
+                    <p class="bg-[#dc3545] text-center text-[24px] font-semibold  text-[white] transform translate-y-[20px] rounded-2xl">{item.name}</p>
+                    <div class=""></div> <div class=""></div>
+                  
 
                 </div>
             </div>
