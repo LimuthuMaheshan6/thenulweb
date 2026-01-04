@@ -58,7 +58,7 @@
             </button>
             </div>
             <div class="logo">
-                <a  href="/" on:click={() => {
+                <a class="text-[15px]"  href="/" on:click={() => {
                     let pad = document.getElementById("pad")
                     let ham = document.getElementById("ham")
 

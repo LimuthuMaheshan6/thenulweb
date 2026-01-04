@@ -64,8 +64,10 @@ $width_screen:800px;
 .logo {
    
   
+  
     width: 241px;
     margin-top: -2px;
+
 
     @media screen and (min-width:1024px) {
         width: 270px;
@@ -74,7 +76,7 @@ $width_screen:800px;
        
 
         text-decoration: none;
-            margin: 0 15px;
+           
         color: white; 
         font-size: 18px;
         font-weight: bold;
@@ -197,6 +199,7 @@ $width_screen:800px;
 }
 
     .hamburger {
+        
         margin-left:0px;
         background: transparent;
         border: transparent;
