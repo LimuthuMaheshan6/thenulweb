@@ -6,7 +6,7 @@
 	import Footer from "$lib/Footer.svelte"
 
 	onMount(async () => {
-		let font = new FontFace("inter", "url(../src/inter.woff2)")
+		let font = new FontFace("inter", "url(inter.woff2)")
 
 		await font.load()
 
