@@ -3,6 +3,7 @@
 	import './xtras.css';
     import { onMount } from 'svelte';
 	import Navbar from '$lib/Navbar.svelte';
+	import Footer from "$lib/Footer.svelte"
 
 	onMount(async () => {
 		let font = new FontFace("inter", "url(../src/inter.woff2)")
@@ -18,7 +19,7 @@
 </script>
 <Navbar></Navbar>
 <slot></slot>
-
+<Footer></Footer>
 
 
 
